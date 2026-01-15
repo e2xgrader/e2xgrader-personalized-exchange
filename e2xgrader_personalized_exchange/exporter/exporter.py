@@ -6,7 +6,7 @@ from nbformat.v4 import new_markdown_cell
 from traitlets import Bool, Unicode
 
 
-class SubmissionExporter(E2xGraderExporter):
+class HTMLSubmissionExporter(E2xGraderExporter):
     hashcode_cell_template_name = Unicode(
         "hashcode_cell.html", help="The name of the hashcode cell template."
     ).tag(config=True)
