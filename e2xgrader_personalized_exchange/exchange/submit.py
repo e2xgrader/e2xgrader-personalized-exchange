@@ -21,7 +21,7 @@ import nbgrader.exchange.default.submit as default_submit
 from nbgrader.utils import check_mode, get_username
 from traitlets import Bool, Type
 
-from ..exporter import SubmissionExporter
+from ..exporter import HTMLSubmissionExporter
 from .exchange import Exchange
 from .hash_utils import (
     compute_hashcode_of_file,
@@ -33,7 +33,7 @@ from .submit_utils import generate_student_info_file, generate_submission_html
 
 class ExchangeSubmit(Exchange, default_submit.ExchangeSubmit):
     submission_exporter_class = Type(
-        SubmissionExporter,
+        HTMLSubmissionExporter,
         klass="nbconvert.exporters.HTMLExporter",
         help=dedent(
             """
