@@ -36,10 +36,12 @@ Source = "https://github.com/e2xgrader/e2xgrader-personalized-exchange"
 [project.optional-dependencies]
 dev = [
   "pre-commit",
-  "pydata-sphinx-theme",
   "ruff",
-  "sphinx",
   "tbump",
+]
+docs = [
+  "pydata-sphinx-theme",
+  "sphinx",
 ]
 
 [tool.hatch.version]
