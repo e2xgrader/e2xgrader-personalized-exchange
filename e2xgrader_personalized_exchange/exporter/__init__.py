@@ -1,3 +1,3 @@
-from .exporter import SubmissionExporter
+from .exporter import HTMLSubmissionExporter
 
-__all__ = ["SubmissionExporter"]
+__all__ = ["HTMLSubmissionExporter"]
